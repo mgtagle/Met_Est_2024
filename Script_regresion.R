@@ -30,7 +30,7 @@ plot(geyser$waiting, geyser$eruptions,
      xlab = "Tiempo espera (min)",
      ylab = "Duración (min)")
 abline(gy.lm, col = "red", lwd = 2)
-
+text(50, 4, "y = -1.87+ 0.075*x")
 # agregar en la tabla el valor predicho
 geyser$predicho <- gy.lm$fitted.values
 geyser$yprima <- -1.874016 + 0.075628 * geyser$waiting
